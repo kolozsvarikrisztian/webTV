@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDSF nyílt világverseny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="top-header-bar top-header-bar--skin-light">WDSF nyílt világverseny - 2018</h1>
+    <p>A World DanceSport Federation (WDSF), korábban a Nemzetközi Táncsport Szövetség (IDSF), a DanceSport és a Para DanceSport nemzetközi irányító testülete , amint azt a Nemzetközi Olimpiai Bizottság (NOB) és a Nemzetközi Paralimpiai Bizottság (IPC) is elismeri.</p>
+    <p>Az 1957-ben alapított Amatőr Táncosok Nemzetközi Tanácsa (ICAD) néven 1990-ben vette fel az IDSF nevet. 2011-ben átnevezték WDSF-re, hogy hangsúlyozzák a szervezet globális jellegét.</p>
+    <p>A WDSF-nek 95 nemzeti tagszövetsége van, amelyek közül 71-et a Nemzeti Olimpiai Bizottság elismert. Közülük 77 teljes jogú tag, míg 18 ideiglenes tag.</p>
+    <p>Tekintsen meg néhány videórészletet a 2018-ban Pécsen megrendezett versenyből:</p>
+    <div id='filmlinkek'>
+
+        <p id="kozepre">
+            <a class="top-header-bar top-header-bar--skin-light" href='javascript:' onClick='filmlejatszo(1)'>Team Szilver TSE (HUN)</a>
+            <a class="top-header-bar top-header-bar--skin-light" href='javascript:' onClick='filmlejatszo(2)'>KADRYL - Bialystok (POL)</a>
+            <a class="top-header-bar top-header-bar--skin-light" href='javascript:' onClick='filmlejatszo(3)'>Univers Minsk Belarus (BLR)</a>
+            <a class="top-header-bar top-header-bar--skin-light" href='javascript:' onClick='filmlejatszo(4)'>Team Adria-Szigo KTSE (HUN)</a>
+            <a class="top-header-bar top-header-bar--skin-light" href='javascript:' onClick='filmlejatszo(5)'>Team 1 TC Ludwisburg (GER)</a>
+        </p>
+        
+
+    </div>
+
+
+    <div id="megjelenik">
+        <iframe id='film' width=1000 height=600 scrolling='no' frameborder=0></iframe>
+    </div>
+
+
+    <script>
+
+    function filmlejatszo(x)
+    {
+        if(x==1)  film.src="https://www.youtube.com/embed/VzZHzMNxJh4?autoplay=1&rel=0"
+        if(x==2)  film.src="https://www.youtube.com/embed/e3wtracVpII?autoplay=1&rel=0"
+        if(x==3)  film.src="https://www.youtube.com/embed/PinzBzgx2F4?autoplay=1&rel=0"
+        if(x==4)  film.src="https://www.youtube.com/embed/ZDM0zsGafH4?autoplay=1&rel=0"
+        if(x==5)  film.src="https://www.youtube.com/embed/68Z9jKk2hbU?autoplay=1&rel=0"
+    }
+
+    /*
+        A linkek végén az autoplay=1 gondoskodik az automatikus indításról,
+        a rel=0 pedig a arról, hogy a videó végén ne jelenjenek meg más,
+        kapcsolódó videóajánlások az ablakban.
+    */
+
+    </script>
+
+</body>
+</html>
